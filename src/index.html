@@ -96,8 +96,8 @@
           I’m available for hiring.
         </p>
         <form action="" class="flex flex-col gap-6">
-          <input type="email" name="Email" placeholder="Enter your Email" class="py-[14px] px-4 w-full">
-          <button type="submit" class="bg-primary text-wd-black px-6 py-3 w-1/2">
+          <input type="email" name="Email" placeholder="Enter your Email" id="inputSubmit" class="text-wd-darkgrey py-[14px] px-4 w-full">
+          <button type="submit" id="btnSubmit" class="bg-primary text-wd-black px-6 py-3 w-1/2">
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </button>
         </form>
@@ -126,6 +126,14 @@
 
   </footer>
 
+  <script>
+    let btnSubmit = document.getElementById('btnSubmit');
+    let inputSubmit = document.getElementById('inputSubmit');
+
+    btnSubmit.onclick = () => {
+      alert(inputSubmit.value);
+    }
+  </script>
 
 
 </body>
